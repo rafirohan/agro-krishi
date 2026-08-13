@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore practical farming guides, step-by-step crop tutorials, and agricultural best practices.">
+  <title>Farming Guides | Agricultural Information Hub</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-agri sticky-top">
+
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <span>AgroKrishi</span>
+        </a>
+
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAgriContent"
+          aria-controls="navbarAgriContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="navbarAgriContent">
+
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="farming-guides.html">
+                Farming Guides
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="crop-details.html">
+                Crop Directory
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pest-control.html">
+                Pest Management
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                About AgroKrishi
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+
+          <!-- CTA -->
+          <div class="d-flex">
+
+            <a href="contact.html" class="btn btn-agri d-none d-lg-inline-block">
+
+              Consult an Expert
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main>
+ 
+    <!-- HERO HEADER -->
+    <section class="bg-agri-primary text-white py-5">
+      <div class="container py-4 text-center">
+
+        <span class="d-inline-block mb-3 text-uppercase fw-semibold small opacity-75">
+          Agricultural Knowledge Center
+        </span>
+
+        <h1 class="text-white display-5 fw-bold mb-3">
+          Farming Knowledge & Guides
+        </h1>
+
+        <p class="lead max-w-700 mx-auto text-light opacity-90 mb-0">
+          Access practical, research-informed farming resources covering
+          crop production, soil health, sustainable agriculture, and
+          modern cultivation techniques.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- GUIDES CONTENT & FILTERS -->
+    <section class="py-5">
+
+      <div class="container">
+
+        <!-- Section Intro -->
+        <div class="text-center mb-4">
+
+          <span class="sub-title">
+            Practical Resources
+          </span>
+
+          <h2 class="main-title mt-2">
+            Explore Agricultural Guides
+          </h2>
+
+          <div class="divider mx-auto"></div>
+
+        </div>
+
+
+        <!-- Search & Filter -->
+        <div class="row mb-5 align-items-center">
+
+          <div class="col-lg-8 mb-3 mb-lg-0">
+
+            <div class="d-flex flex-wrap gap-2">
+
+              <button class="filter-btn active" data-filter="all">
+                All Resources
+              </button>
+
+              <button class="filter-btn" data-filter="rice">
+                Rice Production
+              </button>
+
+              <button class="filter-btn" data-filter="vegetable">
+                Vegetable Production
+              </button>
+
+              <button class="filter-btn" data-filter="fruit">
+                Fruit Cultivation
+              </button>
+
+              <button class="filter-btn" data-filter="organic">
+                Organic Agriculture
+              </button>
+
+              <button class="filter-btn" data-filter="soil">
+                Soil Health
+              </button>
+
+              <button class="filter-btn" data-filter="modern">
+                Precision Farming
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-4">
+
+            <div class="input-group">
+
+              <span class="input-group-text bg-white border-end-0">
+                <i class="bi bi-search text-muted"></i>
+              </span>
+
+              <input type="text" id="agriSearchInput" class="form-control border-start-0"
+                placeholder="Search agricultural resources..." aria-label="Search agricultural resources">
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Guides Grid -->
+        <div class="row g-4" id="guidesGrid">
+
+
+          <!-- Guide 1 -->
+          <div class="col-md-6 col-lg-4 filterable-item" data-category="rice">
+
+            <div class="agri-card">
+
+              <div class="agri-card-img-wrap">
+
+                <img src="https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?auto=format&fit=crop&w=600&q=80"
+                  alt="Sustainable Rice Production" loading="lazy">
+
+                <span class="agri-card-badge">
+                  Rice Production
+                </span>
+
+              </div>
+
+              <div class="agri-card-body">
+
+                <h3 class="agri-card-title">
+                  Sustainable Rice Production
+                </h3>
+
+                <p class="agri-card-text">
+                  Learn efficient rice production practices covering
+                  seed selection, water management, soil fertility,
+                  crop establishment, and yield improvement.
+                </p>
+
+                <a href="guide-details.html?guide=sri" class="btn btn-agri-outline mt-auto">
+
+                  Explore Guide
+                  <i class="bi bi-arrow-right ms-1"></i>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Guide 2 -->
+          <div class="col-md-6 col-lg-4 filterable-item" data-category="vegetable">
+
+            <div class="agri-card">
+
+              <div class="agri-card-img-wrap">
+
+                <img src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=600&q=80"
+                  alt="Commercial Tomato Production" loading="lazy">
+
+                <span class="agri-card-badge">
+                  Vegetable Production
+                </span>
+
+              </div>
+
+              <div class="agri-card-body">
+
+                <h3 class="agri-card-title">
+                  Commercial Tomato Production
+                </h3>
+
+                <p class="agri-card-text">
+                  A practical guide to tomato cultivation covering
+                  nursery management, plant nutrition, irrigation,
+                  crop protection, and post-harvest handling.
+                </p>
+
+                <a href="guide-details.html?guide=tomato" class="btn btn-agri-outline mt-auto">
+
+                  Explore Guide
+                  <i class="bi bi-arrow-right ms-1"></i>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Guide 3 -->
+          <div class="col-md-6 col-lg-4 filterable-item" data-category="organic">
+
+            <div class="agri-card">
+
+              <div class="agri-card-img-wrap">
+
+                <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80"
+                  alt="Organic Fertilizer and Compost" loading="lazy">
+
+                <span class="agri-card-badge">
+                  Organic Agriculture
+                </span>
+
+              </div>
+
+              <div class="agri-card-body">
+
+                <h3 class="agri-card-title">
+                  Organic Fertilizers & Compost
+                </h3>
+
+                <p class="agri-card-text">
+                  Discover practical methods for preparing compost,
+                  organic fertilizers, bio-slurry, and other soil
+                  amendments for sustainable crop production.
+                </p>
+
+                <a href="guide-details.html?guide=compost" class="btn btn-agri-outline mt-auto">
+
+                  Explore Guide
+                  <i class="bi bi-arrow-right ms-1"></i>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Guide 4 -->
+          <div class="col-md-6 col-lg-4 filterable-item" data-category="soil">
+
+            <div class="agri-card">
+
+              <div class="agri-card-img-wrap">
+
+                <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=600&q=80"
+                  alt="Soil Health and Nutrient Management" loading="lazy">
+
+                <span class="agri-card-badge">
+                  Soil Health
+                </span>
+
+              </div>
+
+              <div class="agri-card-body">
+
+                <h3 class="agri-card-title">
+                  Soil Testing & Nutrient Management
+                </h3>
+
+                <p class="agri-card-text">
+                  Understand soil testing, pH balance, essential
+                  nutrients, and fertilizer planning for healthier
+                  soils and more productive crops.
+                </p>
+
+                <a href="guide-details.html?guide=soil" class="btn btn-agri-outline mt-auto">
+
+                  Explore Guide
+                  <i class="bi bi-arrow-right ms-1"></i>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Guide 5 -->
+          <div class="col-md-6 col-lg-4 filterable-item" data-category="fruit">
+
+            <div class="agri-card">
+
+              <div class="agri-card-img-wrap">
+
+                <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=600&q=80"
+                  alt="Mango Orchard Management" loading="lazy">
+
+                <span class="agri-card-badge">
+                  Fruit Cultivation
+                </span>
+
+              </div>
+
+              <div class="agri-card-body">
+
+                <h3 class="agri-card-title">
+                  Modern Mango Orchard Management
+                </h3>
+
+                <p class="agri-card-text">
+                  Improve mango orchard performance through proper
+                  planting, pruning, canopy management, nutrition,
+                  irrigation, and flowering practices.
+                </p>
+
+                <a href="guide-details.html?guide=mango" class="btn btn-agri-outline mt-auto">
+
+                  Explore Guide
+                  <i class="bi bi-arrow-right ms-1"></i>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Guide 6 -->
+          <div class="col-md-6 col-lg-4 filterable-item" data-category="modern">
+
+            <div class="agri-card">
+
+              <div class="agri-card-img-wrap">
+
+                <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=600&q=80"
+                  alt="Precision Drip Irrigation" loading="lazy">
+
+                <span class="agri-card-badge">
+                  Precision Farming
+                </span>
+
+              </div>
+
+              <div class="agri-card-body">
+
+                <h3 class="agri-card-title">
+                  Precision Drip Irrigation
+                </h3>
+
+                <p class="agri-card-text">
+                  Learn how to plan and manage drip irrigation systems
+                  for efficient water delivery, root-zone management,
+                  and improved fertilizer application.
+                </p>
+
+                <a href="guide-details.html?guide=drip" class="btn btn-agri-outline mt-auto">
+
+                  Explore Guide
+                  <i class="bi bi-arrow-right ms-1"></i>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+        <!-- Pagination -->
+        <nav class="mt-5" aria-label="Agricultural guide pagination">
+
+          <ul class="pagination justify-content-center">
+
+            <li class="page-item disabled">
+              <a class="page-link" href="#">
+                Previous
+              </a>
+            </li>
+
+            <li class="page-item active">
+              <a class="page-link bg-agri-primary border-agri-primary" href="#">
+                1
+              </a>
+            </li>
+
+            <li class="page-item">
+              <a class="page-link text-agri-primary" href="#">
+                2
+              </a>
+            </li>
+
+            <li class="page-item">
+              <a class="page-link text-agri-primary" href="#">
+                3
+              </a>
+            </li>
+
+            <li class="page-item">
+              <a class="page-link text-agri-primary" href="#">
+                Next
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="agri-footer">
+
+    <div class="container">
+
+      <div class="row g-4 mb-4">
+
+        <!-- Brand & About -->
+        <div class="col-lg-4 col-md-6">
+
+          <h5 class="fw-bold">
+
+            <i class="bi bi-tree-fill text-agri-secondary me-2"></i>
+
+            AgroKrishi
+
+          </h5>
+
+          <p class="small text-light-50">
+
+            Empowering farmers with practical agricultural knowledge,
+            crop-specific resources, sustainable farming practices,
+            and responsible pest management solutions.
+
+          </p>
+
+
+          <!-- Social Links -->
+          <div class="d-flex gap-2 mt-3">
+
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+
+              <i class="bi bi-facebook"></i>
+
+            </a>
+
+
+            <a href="#" class="social-icon-btn" aria-label="X">
+
+              <i class="bi bi-twitter-x"></i>
+
+            </a>
+
+
+            <a href="#" class="social-icon-btn" aria-label="YouTube">
+
+              <i class="bi bi-youtube"></i>
+
+            </a>
+
+
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+
+              <i class="bi bi-linkedin"></i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+
+          <h5 class="fw-bold">
+            Quick Links
+          </h5>
+
+          <ul class="agri-footer-links small">
+
+            <li>
+              <a href="index.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="farming-guides.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Farming Guides
+              </a>
+            </li>
+
+            <li>
+              <a href="crop-details.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Crop Directory
+              </a>
+            </li>
+
+            <li>
+              <a href="pest-control.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Pest Management
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                About AgroKrishi
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Contact Support
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+        <!-- Agricultural Resources -->
+        <div class="col-lg-3 col-md-6">
+
+          <h5 class="fw-bold">
+            Agricultural Resources
+          </h5>
+
+          <ul class="agri-footer-links small">
+
+            <li>
+              <a href="farming-guides.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Sustainable Farming
+              </a>
+            </li>
+
+            <li>
+              <a href="pest-control.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Integrated Pest Management
+              </a>
+            </li>
+
+            <li>
+              <a href="crop-details.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Soil & Crop Health
+              </a>
+            </li>
+
+            <li>
+              <a href="crop-details.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Crop Production
+              </a>
+            </li>
+
+            <li>
+              <a href="farming-guides.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Organic Agriculture
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Expert Agricultural Support
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+
+          <h5 class="fw-bold">
+            Get In Touch
+          </h5>
+
+          <p class="small text-light-50 mb-3">
+
+            Have a farming question or need agricultural
+            guidance? Our support team is here to help.
+
+          </p>
+
+
+          <ul class="list-unstyled small text-light-50">
+
+            <li class="mb-3">
+
+              <i class="bi bi-geo-alt-fill text-agri-secondary me-2"></i>
+
+              Agricultural Information Center
+
+            </li>
+
+
+            <li class="mb-3">
+
+              <i class="bi bi-envelope-fill text-agri-secondary me-2"></i>
+
+              support@agrokrishi.com
+
+            </li>
+
+
+            <li class="mb-3">
+
+              <i class="bi bi-telephone-fill text-agri-secondary me-2"></i>
+
+              +880 1XXX-XXXXXX
+
+            </li>
+
+
+            <li>
+
+              <i class="bi bi-clock-fill text-agri-secondary me-2"></i>
+
+              Sat – Thu: 9:00 AM – 6:00 PM
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Divider -->
+      <hr class="border-secondary my-4">
+
+
+
+      <!-- Bottom Footer -->
+      <div class="row align-items-center small">
+
+        <div class="col-md-6 text-center text-md-start">
+
+          <p class="mb-0">
+
+            <i class="bi bi-c-circle me-1"></i>
+
+            2026 AgroKrishi. All Rights Reserved.
+
+          </p>
+
+        </div>
+
+
+        <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+
+          <a href="#" class="text-light-50 text-decoration-none me-3">
+
+            Privacy Policy
+
+          </a>
+
+          <a href="#" class="text-light-50 text-decoration-none">
+
+            Terms of Service
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

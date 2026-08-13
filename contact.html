@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact our agricultural extension experts for assistance with crop health and farming questions.">
+  <title>Contact Agricultural Experts | Agricultural Information Hub</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+
+    <nav class="navbar navbar-expand-lg navbar-agri sticky-top">
+
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <span>AgroKrishi</span>
+        </a>
+
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAgriContent"
+          aria-controls="navbarAgriContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="navbarAgriContent">
+
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="farming-guides.html">
+                Farming Guides
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="crop-details.html">
+                Crop Directory
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pest-control.html">
+                Pest Management
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                About AgroKrishi
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+
+          <!-- CTA -->
+          <div class="d-flex">
+
+            <a href="contact.html" class="btn btn-agri d-none d-lg-inline-block">
+
+              Consult an Expert
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main>
+   <section class="bg-agri-primary text-white py-5">
+  <div class="container py-4 text-center">
+
+    <span class="sub-title text-white opacity-75">
+      Agricultural Support Center
+    </span>
+
+    <h1 class="text-white display-5 fw-bold mb-3 mt-2">
+      Get Professional Farming Support
+    </h1>
+
+    <p class="lead max-w-700 mx-auto text-light opacity-90">
+      Share your farming challenges, crop concerns, or pest management
+      questions and receive practical guidance to support better
+      agricultural decisions.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="py-5">
+  <div class="container">
+
+    <div class="row g-5">
+
+      <div class="col-lg-7">
+
+        <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5">
+
+          <span class="sub-title text-agri-secondary fw-bold">
+            Expert Assistance
+          </span>
+
+          <h3 class="mb-4 text-agri-primary">
+            Tell Us About Your Farming Challenge
+          </h3>
+
+          <form id="agriContactForm" class="needs-validation" novalidate>
+
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <label for="fullName" class="form-label fw-semibold">
+                  Full Name *
+                </label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Enter your full name"
+                  required>
+
+                <div class="invalid-feedback">
+                  Please enter your full name.
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <label for="emailAddress" class="form-label fw-semibold">
+                  Email Address *
+                </label>
+
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailAddress"
+                  placeholder="Enter your email address"
+                  required>
+
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <label for="phoneNumber" class="form-label fw-semibold">
+                  Contact Number
+                </label>
+
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder="Enter your phone number">
+              </div>
+
+
+              <div class="col-md-6">
+                <label for="topicArea" class="form-label fw-semibold">
+                  Area of Assistance *
+                </label>
+
+                <select class="form-select" id="topicArea" required>
+                  <option value="" selected disabled>
+                    Select an area...
+                  </option>
+                  <option value="crop">Crop Cultivation</option>
+                  <option value="pest">Pest & Disease Management</option>
+                  <option value="soil">Soil & Nutrient Management</option>
+                  <option value="irrigation">Irrigation & Water Management</option>
+                  <option value="organic">Organic & Sustainable Farming</option>
+                </select>
+
+                <div class="invalid-feedback">
+                  Please select an area of assistance.
+                </div>
+              </div>
+
+
+              <div class="col-12">
+                <label for="subject" class="form-label fw-semibold">
+                  Subject *
+                </label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  placeholder="Briefly describe your issue"
+                  required>
+
+                <div class="invalid-feedback">
+                  Please enter a subject.
+                </div>
+              </div>
+
+
+              <div class="col-12">
+                <label for="message" class="form-label fw-semibold">
+                  Describe Your Question *
+                </label>
+
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Describe your crop, farming condition, pest issue, or other agricultural concern..."
+                  required></textarea>
+
+                <div class="invalid-feedback">
+                  Please provide details about your question.
+                </div>
+              </div>
+
+
+              <div class="col-12">
+                <label for="fileAttachment" class="form-label fw-semibold">
+                  Upload Crop Image
+                  <span class="text-muted fw-normal">(Optional)</span>
+                </label>
+
+                <input
+                  class="form-control"
+                  type="file"
+                  id="fileAttachment"
+                  accept="image/*">
+
+                <div class="form-text">
+                  A clear image can help identify visible crop damage,
+                  pest activity, or disease symptoms.
+                </div>
+              </div>
+
+
+              <div class="col-12 mt-4 d-flex gap-2">
+
+                <button type="submit" class="btn btn-agri">
+                  Send Request
+                </button>
+
+                <button type="reset" class="btn btn-agri-outline">
+                  Clear Form
+                </button>
+
+              </div>
+
+            </div>
+
+          </form>
+
+          <div id="formFeedbackAlert" class="d-none"></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-5">
+
+        <div class="sidebar-widget">
+
+          <h4 class="sidebar-widget-title text-agri-primary">
+            <i class="bi bi-headset me-2 text-agri-secondary"></i>
+            Agricultural Support Center
+          </h4>
+
+          <p class="text-muted">
+            Our agricultural support team provides practical
+            information and guidance for crop production,
+            pest management, soil health, and sustainable
+            farming practices.
+          </p>
+
+          <hr>
+
+          <div class="d-flex mb-3">
+
+            <i class="bi bi-envelope-check-fill fs-4 text-agri-secondary me-3"></i>
+
+            <div>
+              <h6 class="mb-0 fw-bold">
+                Email Assistance
+              </h6>
+
+              <p class="text-muted mb-0 small">
+                support@agrokrishi.org
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="d-flex mb-3">
+
+            <i class="bi bi-telephone-outbound-fill fs-4 text-agri-secondary me-3"></i>
+
+            <div>
+              <h6 class="mb-0 fw-bold">
+                Farmer Support Line
+              </h6>
+
+              <p class="text-muted mb-0 small">
+                +1 (800) 555-AGRI
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="d-flex mb-3">
+
+            <i class="bi bi-building-fill fs-4 text-agri-secondary me-3"></i>
+
+            <div>
+              <h6 class="mb-0 fw-bold">
+                Agricultural Support Office
+              </h6>
+
+              <p class="text-muted mb-0 small">
+                Agricultural Research & Extension Center
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="d-flex">
+
+            <i class="bi bi-clock-fill fs-4 text-agri-secondary me-3"></i>
+
+            <div>
+              <h6 class="mb-0 fw-bold">
+                Support Hours
+              </h6>
+
+              <p class="text-muted mb-0 small">
+                Monday – Friday, 8:00 AM – 5:00 PM
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+
+          <div class="bg-agri-accent p-4 text-center">
+
+            <i class="bi bi-geo-alt-fill fs-1 text-agri-secondary"></i>
+
+            <h5 class="mt-2 text-agri-primary">
+              Agricultural Support Location
+            </h5>
+
+            <p class="text-muted small mb-0">
+              Research, Extension & Farmer Support Center
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  </main>
+
+   <footer class="agri-footer">
+
+    <div class="container">
+
+      <div class="row g-4 mb-4">
+
+        <!-- Brand & About -->
+        <div class="col-lg-4 col-md-6">
+
+          <h5 class="fw-bold">
+
+            <i class="bi bi-tree-fill text-agri-secondary me-2"></i>
+
+            AgroKrishi
+
+          </h5>
+
+          <p class="small text-light-50">
+
+            Empowering farmers with practical agricultural knowledge,
+            crop-specific resources, sustainable farming practices,
+            and responsible pest management solutions.
+
+          </p>
+
+
+          <!-- Social Links -->
+          <div class="d-flex gap-2 mt-3">
+
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+
+              <i class="bi bi-facebook"></i>
+
+            </a>
+
+
+            <a href="#" class="social-icon-btn" aria-label="X">
+
+              <i class="bi bi-twitter-x"></i>
+
+            </a>
+
+
+            <a href="#" class="social-icon-btn" aria-label="YouTube">
+
+              <i class="bi bi-youtube"></i>
+
+            </a>
+
+
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+
+              <i class="bi bi-linkedin"></i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+
+          <h5 class="fw-bold">
+            Quick Links
+          </h5>
+
+          <ul class="agri-footer-links small">
+
+            <li>
+              <a href="index.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="farming-guides.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Farming Guides
+              </a>
+            </li>
+
+            <li>
+              <a href="crop-details.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Crop Directory
+              </a>
+            </li>
+
+            <li>
+              <a href="pest-control.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Pest Management
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                About AgroKrishi
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Contact Support
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+        <!-- Agricultural Resources -->
+        <div class="col-lg-3 col-md-6">
+
+          <h5 class="fw-bold">
+            Agricultural Resources
+          </h5>
+
+          <ul class="agri-footer-links small">
+
+            <li>
+              <a href="farming-guides.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Sustainable Farming
+              </a>
+            </li>
+
+            <li>
+              <a href="pest-control.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Integrated Pest Management
+              </a>
+            </li>
+
+            <li>
+              <a href="crop-details.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Soil & Crop Health
+              </a>
+            </li>
+
+            <li>
+              <a href="crop-details.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Crop Production
+              </a>
+            </li>
+
+            <li>
+              <a href="farming-guides.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Organic Agriculture
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                <i class="bi bi-chevron-right me-1"></i>
+                Expert Agricultural Support
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+
+          <h5 class="fw-bold">
+            Get In Touch
+          </h5>
+
+          <p class="small text-light-50 mb-3">
+
+            Have a farming question or need agricultural
+            guidance? Our support team is here to help.
+
+          </p>
+
+
+          <ul class="list-unstyled small text-light-50">
+
+            <li class="mb-3">
+
+              <i class="bi bi-geo-alt-fill text-agri-secondary me-2"></i>
+
+              Agricultural Information Center
+
+            </li>
+
+
+            <li class="mb-3">
+
+              <i class="bi bi-envelope-fill text-agri-secondary me-2"></i>
+
+              support@agrokrishi.com
+
+            </li>
+
+
+            <li class="mb-3">
+
+              <i class="bi bi-telephone-fill text-agri-secondary me-2"></i>
+
+              +880 1XXX-XXXXXX
+
+            </li>
+
+
+            <li>
+
+              <i class="bi bi-clock-fill text-agri-secondary me-2"></i>
+
+              Sat – Thu: 9:00 AM – 6:00 PM
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Divider -->
+      <hr class="border-secondary my-4">
+
+
+
+      <!-- Bottom Footer -->
+      <div class="row align-items-center small">
+
+        <div class="col-md-6 text-center text-md-start">
+
+          <p class="mb-0">
+
+            <i class="bi bi-c-circle me-1"></i>
+
+            2026 AgroKrishi. All Rights Reserved.
+
+          </p>
+
+        </div>
+
+
+        <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+
+          <a href="#" class="text-light-50 text-decoration-none me-3">
+
+            Privacy Policy
+
+          </a>
+
+          <a href="#" class="text-light-50 text-decoration-none">
+
+            Terms of Service
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
