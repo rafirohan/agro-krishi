@@ -452,6 +452,7 @@ main > section:first-of-type:not(.hero-carousel) {
 .page-hero {
     position: relative;
     overflow: hidden;
+    background-color: var(--agri-primary);
 }
 
 .page-hero::before {
@@ -460,6 +461,70 @@ main > section:first-of-type:not(.hero-carousel) {
     inset: 0;
     background: linear-gradient(135deg, rgba(255,255,255,0.12), transparent 60%);
     pointer-events: none;
+    z-index: 1;
+}
+
+.page-hero > .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero .order-1 {
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .page-hero .order-1 {
+        margin-bottom: 0;
+    }
+    
+    .page-hero .py-4 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .page-hero .py-lg-6 {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero .sub-title {
+        font-size: 0.7rem;
+    }
+    
+    .page-hero img {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-hero .sub-title {
+        font-size: 0.65rem;
+    }
+    
+    .page-hero img {
+        max-height: 280px;
+        border-width: 2px !important;
+    }
+    
+    .page-hero .rounded-3,
+    .page-hero .rounded-lg-4 {
+        border-radius: 12px !important;
+    }
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+    .btn-md-default {
+        padding: 0.7rem 1.35rem !important;
+        font-size: 1rem !important;
+    }
 }
 
 .sub-title {
