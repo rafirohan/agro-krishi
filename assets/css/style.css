@@ -25,9 +25,15 @@ html {
 body {
     font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
     color: var(--agri-dark);
-    background: #fbfcf8;
+    background:
+        radial-gradient(circle at top, rgba(144, 169, 85, 0.12), transparent 30%),
+        #fbfcf8;
     line-height: 1.7;
     overflow-x: hidden;
+}
+
+main {
+    scroll-margin-top: 100px;
 }
 
 h1,
@@ -49,6 +55,11 @@ a {
     text-decoration: none;
     transition: var(--agri-transition);
 }
+
+.pt-50 {
+    padding-top: 50px;
+}
+
 
 .text-agri-primary {
     color: var(--agri-primary) !important;
@@ -155,15 +166,27 @@ a {
     right: 0;
     z-index: 1030;
 
-    background: rgba(255, 255, 255, 0.94);
+    background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
 
     border-bottom: 1px solid rgba(49, 87, 44, .08);
+    box-shadow: 0 8px 20px rgba(22, 34, 18, 0.04);
 
     padding: 1rem 0;
 
     transition: var(--agri-transition);
+}
+
+.navbar-agri.scrolled {
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 12px 28px rgba(22, 34, 18, 0.08);
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.navbar-agri .container {
+    align-items: center;
 }
 
 .navbar-agri .navbar-brand {
@@ -177,6 +200,11 @@ a {
     font-weight: 900;
 
     letter-spacing: -0.04em;
+}
+
+.navbar-agri .navbar-brand span {
+    display: inline-flex;
+    align-items: center;
 }
 
 .navbar-agri .navbar-brand i {
@@ -208,6 +236,11 @@ a {
     transition: var(--agri-transition);
 }
 
+.navbar-agri .nav-link:hover,
+.navbar-agri .nav-link:focus {
+    color: var(--agri-primary);
+}
+
 .navbar-agri .nav-link::after {
     content: "";
 
@@ -232,6 +265,10 @@ a {
 .navbar-agri .nav-link.active {
     color: var(--agri-primary);
     background: transparent;
+}
+
+.navbar-agri .nav-link.active {
+    font-weight: 800;
 }
 
 .navbar-agri .nav-link:hover::after,
@@ -410,6 +447,19 @@ a {
 
 main > section:first-of-type:not(.hero-carousel) {
     position: relative;
+}
+
+.page-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.12), transparent 60%);
+    pointer-events: none;
 }
 
 .sub-title {

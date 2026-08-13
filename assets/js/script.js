@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // --- Active Nav Link Highlighter ---
   highlightActiveNavLink();
+  initNavbarScrollState();
 
   // --- Initialize Dynamic Components ---
   initCategoryFilters();
@@ -9,6 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactFormValidation();
   initSmoothScroll();
 });
+
+function initNavbarScrollState() {
+  const navbar = document.querySelector('.navbar-agri');
+  if (!navbar) return;
+
+  const applyState = () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 12);
+  };
+
+  applyState();
+  window.addEventListener('scroll', applyState, { passive: true });
+}
 
 /**
  * Highlights the active menu item based on current location URL
