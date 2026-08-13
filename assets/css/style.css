@@ -1,4 +1,3 @@
-
 :root {
     --agri-primary: #31572c;
     --agri-primary-hover: #1f3d1c;
@@ -103,10 +102,8 @@ a {
     align-items: center;
     justify-content: center;
     padding: 0.7rem 1.35rem;
-
     border-radius: 10px;
     font-weight: 700;
-
     transition: var(--agri-transition);
 }
 
@@ -122,11 +119,8 @@ a {
     background: var(--agri-primary-hover);
     border-color: var(--agri-primary-hover);
     color: #fff;
-
     transform: translateY(-2px);
-
-    box-shadow:
-        0 10px 25px rgba(49, 87, 44, .22);
+    box-shadow: 0 10px 25px rgba(49, 87, 44, .22);
 }
 
 .btn-agri-outline {
@@ -140,7 +134,6 @@ a {
     background: var(--agri-primary);
     border-color: var(--agri-primary);
     color: #fff;
-
     transform: translateY(-2px);
 }
 
@@ -155,7 +148,6 @@ a {
     background: #c7943e;
     border-color: #c7943e;
     color: #fff;
-
     transform: translateY(-2px);
 }
 
@@ -165,16 +157,12 @@ a {
     left: 0;
     right: 0;
     z-index: 1030;
-
     background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-
     border-bottom: 1px solid rgba(49, 87, 44, .08);
     box-shadow: 0 8px 20px rgba(22, 34, 18, 0.04);
-
     padding: 1rem 0;
-
     transition: var(--agri-transition);
 }
 
@@ -193,12 +181,9 @@ a {
     display: flex;
     align-items: center;
     gap: 0.55rem;
-
     color: var(--agri-dark);
-
     font-size: 1.45rem;
     font-weight: 900;
-
     letter-spacing: -0.04em;
 }
 
@@ -210,29 +195,21 @@ a {
 .navbar-agri .navbar-brand i {
     width: 42px;
     height: 42px;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     background: var(--agri-primary);
     color: #fff !important;
-
     border-radius: 12px;
-
     font-size: 1.35rem !important;
 }
 
 .navbar-agri .nav-link {
     position: relative;
-
     color: #4c5548;
     font-weight: 650;
-
     padding: .55rem .9rem !important;
-
     border-radius: 0;
-
     transition: var(--agri-transition);
 }
 
@@ -243,21 +220,14 @@ a {
 
 .navbar-agri .nav-link::after {
     content: "";
-
     position: absolute;
-
     left: 50%;
     bottom: 0;
-
     width: 0;
     height: 3px;
-
     background: var(--agri-secondary);
-
     border-radius: 20px;
-
     transform: translateX(-50%);
-
     transition: var(--agri-transition);
 }
 
@@ -297,10 +267,8 @@ a {
 .hero-carousel .carousel-item {
     height: 78vh;
     min-height: 570px;
-
     background-size: cover;
     background-position: center;
-
     position: relative;
 }
 
@@ -322,34 +290,25 @@ a {
 
 .hero-content {
     color: #fff;
-
     max-width: 780px;
     padding-top: 2rem;
 }
 
 .hero-content h1 {
     color: #fff;
-
     font-size: clamp(2.8rem, 6vw, 5.5rem);
     line-height: 1.02;
-
     font-weight: 900;
-
     max-width: 760px;
-
     letter-spacing: -0.055em;
-
     margin-bottom: 1.5rem;
 }
 
 .hero-content p {
     color: rgba(255,255,255,.84);
-
     max-width: 650px;
-
     font-size: 1.15rem;
     line-height: 1.8;
-
     margin-bottom: 2rem;
 }
 
@@ -361,7 +320,6 @@ a {
 .hero-carousel .carousel-indicators {
     bottom: 30px;
     justify-content: flex-start;
-
     padding-left: calc(
         (100% - 1320px) / 2
     );
@@ -370,12 +328,9 @@ a {
 .hero-carousel .carousel-indicators button {
     width: 35px;
     height: 4px;
-
     border: 0;
     border-radius: 10px;
-
     opacity: .5;
-
     transition: var(--agri-transition);
 }
 
@@ -394,44 +349,33 @@ a {
     display: inline-flex;
     align-items: center;
     gap: .55rem;
-
     color: var(--agri-secondary);
-
     font-size: .78rem;
     font-weight: 800;
-
     text-transform: uppercase;
     letter-spacing: .15em;
-
     margin-bottom: .7rem;
 }
 
 .section-header .sub-title::before,
 .section-header .sub-title::after {
     content: "";
-
     width: 22px;
     height: 2px;
-
     background: var(--agri-secondary);
 }
 
 .section-header .main-title {
     color: var(--agri-dark);
-
     font-size: clamp(2rem, 4vw, 3rem);
-
     line-height: 1.15;
-
     max-width: 760px;
-
     margin: 0 auto .9rem;
 }
 
 .section-header .divider {
     width: 75px;
     height: 4px;
-
     background:
         linear-gradient(
             90deg,
@@ -440,7 +384,6 @@ a {
         );
 
     margin: 1.2rem auto 0;
-
     border-radius: 20px;
 }
 
@@ -527,6 +470,55 @@ main > section:first-of-type:not(.hero-carousel) {
     }
 }
 
+.btn-lg-custom {
+    padding: 0.65rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+    box-shadow: 0 4px 15px rgba(49, 87, 44, 0.2);
+}
+
+.btn-lg-custom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(49, 87, 44, 0.35);
+}
+
+.btn-outline-custom {
+    padding: 0.65rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+    background: transparent;
+}
+
+.btn-outline-custom:hover {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-custom:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 576px) {
+    .btn-lg-custom,
+    .btn-outline-custom {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+}
+
 .sub-title {
     color: var(--agri-secondary);
     letter-spacing: .12em;
@@ -557,32 +549,22 @@ main section img {
 
 .agri-card {
     position: relative;
-
     border: 1px solid var(--agri-border);
     border-radius: 18px;
-
     overflow: hidden;
-
     background: #fff;
-
     box-shadow: var(--agri-card-shadow);
-
     height: 100%;
-
     display: flex;
     flex-direction: column;
-
     transition: var(--agri-transition);
 }
 
 .agri-card::before {
     content: "";
-
     position: absolute;
-
     left: 0;
     top: 0;
-
     width: 100%;
     height: 3px;
 
@@ -595,17 +577,13 @@ main section img {
 
     transform: scaleX(0);
     transform-origin: left;
-
     transition: var(--agri-transition);
-
     z-index: 2;
 }
 
 .agri-card:hover {
     transform: translateY(-10px);
-
     border-color: rgba(144, 169, 85, .5);
-
     box-shadow: var(--agri-hover-shadow);
 }
 
@@ -616,11 +594,8 @@ main section img {
 
 .agri-card-img-wrap {
     position: relative;
-
     overflow: hidden;
-
     height: 225px;
-
     background: #edf1e8;
 }
 
@@ -641,7 +616,6 @@ main section img {
 
 .agri-card-img-wrap::after {
     content: "";
-
     position: absolute;
     inset: 0;
 
@@ -658,47 +632,33 @@ main section img {
 
 .agri-card-badge {
     position: absolute;
-
     left: 1rem;
     top: 1rem;
     right: auto;
-
     z-index: 3;
-
     background: rgba(255,255,255,.93);
-
     color: var(--agri-primary);
-
     font-size: .7rem;
     font-weight: 800;
-
     padding: .45rem .8rem;
-
     border-radius: 7px;
-
     text-transform: uppercase;
     letter-spacing: .07em;
-
     box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
 
 
 .agri-card-body {
     padding: 1.5rem 1.5rem 1.6rem;
-
     display: flex;
     flex-direction: column;
-
     flex-grow: 1;
 }
 
 .agri-card-title {
     color: var(--agri-dark);
-
     font-size: 1.25rem;
-
     line-height: 1.35;
-
     margin-bottom: .7rem;
 }
 
@@ -708,12 +668,9 @@ main section img {
 
 .agri-card-text {
     color: var(--agri-muted);
-
     font-size: .94rem;
     line-height: 1.75;
-
     margin-bottom: 1.3rem;
-
     flex-grow: 1;
 }
 
@@ -725,49 +682,32 @@ main section img {
 
 .feature-box {
     position: relative;
-
     padding: 2.2rem 1.6rem;
-
     border-radius: 18px;
-
     background: #fff;
-
     border: 1px solid var(--agri-border);
-
     box-shadow: 0 8px 30px rgba(40,60,35,.05);
-
     text-align: center;
-
     height: 100%;
-
     overflow: hidden;
-
     transition: var(--agri-transition);
 }
 
 .feature-box::after {
     content: "";
-
     position: absolute;
-
     width: 100px;
     height: 100px;
-
     right: -50px;
     bottom: -50px;
-
     background: var(--agri-accent);
-
     border-radius: 50%;
-
     transition: var(--agri-transition);
 }
 
 .feature-box:hover {
     transform: translateY(-8px);
-
     border-color: rgba(144,169,85,.45);
-
     box-shadow: var(--agri-hover-shadow);
 }
 
@@ -798,76 +738,57 @@ main section img {
     color: var(--agri-primary);
 
     font-size: 1.9rem;
-
     margin-bottom: 1.3rem;
-
     transition: var(--agri-transition);
 }
 
 .feature-box:hover .feature-icon-wrapper {
     background: var(--agri-primary);
     color: #fff;
-
     transform: rotate(-5deg) scale(1.08);
 }
 
 .feature-box h4 {
     position: relative;
     z-index: 2;
-
     font-size: 1.05rem;
-
     margin-bottom: .75rem;
 }
 
 .feature-box p {
     position: relative;
     z-index: 2;
-
     font-size: .9rem;
 }
 
 
 .filter-btn {
     border: 1px solid var(--agri-border);
-
     background: #fff;
     color: #4c5548;
-
     font-weight: 700;
-
     padding: .55rem 1.2rem;
-
     border-radius: 50px;
-
     margin: .25rem;
-
     transition: var(--agri-transition);
 }
 
 .filter-btn:hover {
     color: var(--agri-primary);
-
     border-color: var(--agri-secondary);
-
     transform: translateY(-2px);
 }
 
 .filter-btn.active {
     background: var(--agri-primary);
-
     color: #fff;
-
     border-color: var(--agri-primary);
-
-    box-shadow:
-        0 8px 20px rgba(49,87,44,.18);
+    box-shadow: 0 8px 20px rgba(49,87,44,.18);
 }
 
 
 .cta-banner {
     position: relative;
-
     overflow: hidden;
 
     background:
@@ -882,15 +803,10 @@ main section img {
     background-position: center;
 
     background-attachment: fixed;
-
     color: #fff;
-
     padding: 6rem 2rem;
-
     text-align: center;
-
     border-radius: 24px;
-
     margin: 2rem auto;
 }
 
@@ -906,46 +822,30 @@ main section img {
 
 .sidebar-widget {
     background: #fff;
-
     border: 1px solid var(--agri-border);
-
     border-radius: 16px;
-
     padding: 1.4rem;
-
     margin-bottom: 1.5rem;
-
     box-shadow: var(--agri-card-shadow);
 }
 
 .sidebar-widget-title {
     color: var(--agri-dark);
-
     font-size: 1.05rem;
-
     margin-bottom: 1rem;
-
     padding-bottom: .8rem;
-
-    border-bottom:
-        1px solid var(--agri-border);
-
+    border-bottom: 1px solid var(--agri-border);
     position: relative;
 }
 
 .sidebar-widget-title::after {
     content: "";
-
     position: absolute;
-
     left: 0;
     bottom: -2px;
-
     width: 45px;
     height: 3px;
-
     background: var(--agri-secondary);
-
     border-radius: 10px;
 }
 
@@ -963,35 +863,25 @@ main section img {
 
     padding-top: 5rem;
     padding-bottom: 2rem;
-
     margin-top: 3rem;
 }
 
 .agri-footer h5 {
     color: #fff;
-
     font-size: 1rem;
-
     margin-bottom: 1.3rem;
-
     position: relative;
-
     padding-bottom: .7rem;
 }
 
 .agri-footer h5::after {
     content: "";
-
     position: absolute;
-
     left: 0;
     bottom: 0;
-
     width: 32px;
     height: 3px;
-
     background: var(--agri-secondary);
-
     border-radius: 10px;
 }
 
@@ -1022,23 +912,16 @@ main section img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 12px;
-
     background: rgba(255,255,255,.08);
-
     color: #fff;
-
     margin-right: .35rem;
-
     transition: var(--agri-transition);
 }
 
 .social-icon-btn:hover {
     background: var(--agri-secondary);
-
     color: var(--agri-dark);
-
     transform: translateY(-4px);
 }
 
@@ -1052,8 +935,7 @@ img {
 }
 
 .shadow-lg {
-    box-shadow:
-        0 25px 60px rgba(30,50,25,.13) !important;
+    box-shadow: 0 25px 60px rgba(30,50,25,.13) !important;
 }
 
 ::-webkit-scrollbar {
@@ -1130,9 +1012,6 @@ img {
         font-size: 1rem;
     }
 
-    /* .agri-card-img-wrap {
-        height: 210px;
-    } */
 }
 
 @media (max-width: 767.98px) {
@@ -1217,10 +1096,6 @@ img {
     .agri-card {
         border-radius: 15px;
     }
-
-    /* .agri-card-img-wrap {
-        height: 200px;
-    } */
 
     .feature-box {
         padding: 1.8rem 1.3rem;

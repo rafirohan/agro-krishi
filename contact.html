@@ -83,286 +83,227 @@
   </header>
 
   <main>
-    <section class="bg-agri-primary text-white pt-50">
-      <div class="container py-5 text-center">
+    <section class="page-hero bg-agri-primary text-white pt-50">
+      <div class="container pt-5">
+        <div class="row align-items-center g-3 g-md-4 g-lg-5 py-4 py-md-5 py-lg-6">
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1">
+            <span class="sub-title text-agri-secondary fw-bold">Get in Touch</span>
+            <h1 class="text-white fw-bold mb-3" style="font-size: clamp(1.75rem, 5vw, 3.5rem); line-height: 1.2;">Reach out for expert farming support</h1>
+            <p class="text-light opacity-90 mb-4" style="font-size: clamp(0.95rem, 2vw, 1.1rem); line-height: 1.7;">
+              Have a crop challenge, pest concern, or farming question? Our agricultural experts are ready to provide practical guidance to help you make better farming decisions.
+            </p>
+            <div class="d-flex flex-wrap gap-2 gap-md-3 mt-2">
+              <a href="#contactForm" class="btn btn-agri btn-lg-custom">
+                <i class="bi bi-chat-left-text me-2"></i>Send a Message
+              </a>
+              <a href="tel:+880123456789" class="btn btn-agri-outline btn-outline-custom text-white">
+                <i class="bi bi-telephone me-2"></i>Call Us
+              </a>
+            </div>
+          </div>
 
-        <span class="sub-title text-white opacity-75">
-          Agricultural Support Center
-        </span>
-
-        <h1 class="text-white display-5 fw-bold mb-3 mt-2">
-          Get Professional Farming Support
-        </h1>
-
-        <p class="lead max-w-700 mx-auto text-light opacity-90">
-          Share your farming challenges, crop concerns, or pest management
-          questions and receive practical guidance to support better
-          agricultural decisions.
-        </p>
-
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/Farming Guides.avif" alt="Agricultural support specialist" class="img-fluid rounded-3 rounded-lg-4 shadow-lg border border-white border-2 border-lg-3 w-100" style="max-height: 500px; object-fit: cover;">
+          </div>
+        </div>
       </div>
     </section>
 
-
     <section class="py-5">
       <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-box text-center">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <h5 class="text-agri-primary">Email Support</h5>
+              <p class="text-muted small mb-2">Get detailed guidance via email</p>
+              <p class="text-agri-secondary small mb-0">support@agrokrishi.com</p>
+            </div>
+          </div>
 
-        <div class="row g-5">
 
-          <div class="col-lg-7">
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-box text-center">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <h5 class="text-agri-primary">Phone Support</h5>
+              <p class="text-muted small mb-2">Talk to our experts directly</p>
+              <p class="text-agri-secondary small mb-0">+880 123-456-789</p>
+            </div>
+          </div>
 
+
+
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-box text-center">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <h5 class="text-agri-primary">Visit Us</h5>
+              <p class="text-muted small mb-2">Agricultural Research Center</p>
+              <p class="text-agri-secondary small mb-0">Dhaka, Bangladesh</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-box text-center">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-clock-fill"></i>
+              </div>
+              <h5 class="text-agri-primary">Support Hours</h5>
+              <p class="text-muted small mb-0">Saturday – Thursday</p>
+              <p class="text-agri-secondary small mb-0">9:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-agri-light-subtle" id="contactForm">
+      <div class="container">
+        <div class="section-header mb-5">
+          <span class="sub-title">Contact Form</span>
+          <h2 class="main-title">Send us your farming question</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-8">
             <div class="card agri-card border-0 rounded-4 p-4 p-md-5">
-
-              <span class="sub-title text-agri-secondary fw-bold">
-                Expert Assistance
-              </span>
-
-              <h3 class="mb-4 text-agri-primary">
-                Tell Us About Your Farming Challenge
-              </h3>
-
               <form id="agriContactForm" class="needs-validation" novalidate>
-
                 <div class="row g-3">
-
                   <div class="col-md-6">
-                    <label for="fullName" class="form-label fw-semibold">
-                      Full Name *
-                    </label>
-
-                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
-
-                    <div class="invalid-feedback">
-                      Please enter your full name.
-                    </div>
+                    <label for="fullName" class="form-label fw-bold text-agri-dark">Full Name *</label>
+                    <input type="text" class="form-control form-control-agri" id="fullName" placeholder="Enter your full name" required>
+                    <div class="invalid-feedback">Please enter your full name.</div>
                   </div>
 
-
                   <div class="col-md-6">
-                    <label for="emailAddress" class="form-label fw-semibold">
-                      Email Address *
-                    </label>
-
-                    <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email address"
-                      required>
-
-                    <div class="invalid-feedback">
-                      Please enter a valid email address.
-                    </div>
+                    <label for="emailAddress" class="form-label fw-bold text-agri-dark">Email Address *</label>
+                    <input type="email" class="form-control form-control-agri" id="emailAddress" placeholder="Enter your email address" required>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
                   </div>
 
-
                   <div class="col-md-6">
-                    <label for="phoneNumber" class="form-label fw-semibold">
-                      Contact Number
-                    </label>
-
-                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number">
+                    <label for="phoneNumber" class="form-label fw-bold text-agri-dark">Contact Number</label>
+                    <input type="tel" class="form-control form-control-agri" id="phoneNumber" placeholder="Enter your phone number">
                   </div>
 
+                  <div class="col-md-6">
+                    <label for="farmLocation" class="form-label fw-bold text-agri-dark">Farm Location *</label>
+                    <input type="text" class="form-control form-control-agri" id="farmLocation" placeholder="Your area or district" required>
+                    <div class="invalid-feedback">Please enter your farm location.</div>
+                  </div>
 
                   <div class="col-md-6">
-                    <label for="topicArea" class="form-label fw-semibold">
-                      Area of Assistance *
-                    </label>
-
-                    <select class="form-select" id="topicArea" required>
-                      <option value="" selected disabled>
-                        Select an area...
-                      </option>
+                    <label for="topicArea" class="form-label fw-bold text-agri-dark">Area of Assistance *</label>
+                    <select class="form-select form-control-agri" id="topicArea" required>
+                      <option value="" selected disabled>Select an area...</option>
                       <option value="crop">Crop Cultivation</option>
                       <option value="pest">Pest & Disease Management</option>
                       <option value="soil">Soil & Nutrient Management</option>
                       <option value="irrigation">Irrigation & Water Management</option>
                       <option value="organic">Organic & Sustainable Farming</option>
+                      <option value="other">Other</option>
                     </select>
-
-                    <div class="invalid-feedback">
-                      Please select an area of assistance.
-                    </div>
+                    <div class="invalid-feedback">Please select an area of assistance.</div>
                   </div>
 
+                  <div class="col-md-6">
+                    <label for="cropType" class="form-label fw-bold text-agri-dark">Crop Type *</label>
+                    <input type="text" class="form-control form-control-agri" id="cropType" placeholder="e.g., Rice, Tomato, Mango" required>
+                    <div class="invalid-feedback">Please enter the crop type.</div>
+                  </div>
 
                   <div class="col-12">
-                    <label for="subject" class="form-label fw-semibold">
-                      Subject *
-                    </label>
-
-                    <input type="text" class="form-control" id="subject" placeholder="Briefly describe your issue"
-                      required>
-
-                    <div class="invalid-feedback">
-                      Please enter a subject.
-                    </div>
+                    <label for="subject" class="form-label fw-bold text-agri-dark">Subject *</label>
+                    <input type="text" class="form-control form-control-agri" id="subject" placeholder="Briefly describe your issue" required>
+                    <div class="invalid-feedback">Please enter a subject.</div>
                   </div>
-
 
                   <div class="col-12">
-                    <label for="message" class="form-label fw-semibold">
-                      Describe Your Question *
-                    </label>
-
-                    <textarea class="form-control" id="message" rows="5"
-                      placeholder="Describe your crop, farming condition, pest issue, or other agricultural concern..."
-                      required></textarea>
-
-                    <div class="invalid-feedback">
-                      Please provide details about your question.
-                    </div>
+                    <label for="message" class="form-label fw-bold text-agri-dark">Describe Your Question *</label>
+                    <textarea class="form-control form-control-agri" id="message" rows="5" placeholder="Provide detailed information about your crop condition, pest issue, or farming concern..." required></textarea>
+                    <div class="invalid-feedback">Please provide details about your question.</div>
                   </div>
-
 
                   <div class="col-12">
-                    <label for="fileAttachment" class="form-label fw-semibold">
-                      Upload Crop Image
-                      <span class="text-muted fw-normal">(Optional)</span>
-                    </label>
-
-                    <input class="form-control" type="file" id="fileAttachment" accept="image/*">
-
-                    <div class="form-text">
-                      A clear image can help identify visible crop damage,
-                      pest activity, or disease symptoms.
-                    </div>
+                    <label for="fileAttachment" class="form-label fw-bold text-agri-dark">Upload Crop Image <span class="text-muted fw-normal">(Optional)</span></label>
+                    <input class="form-control form-control-agri" type="file" id="fileAttachment" accept="image/*">
+                    <div class="form-text">A clear image can help identify visible crop damage, pest activity, or disease symptoms.</div>
                   </div>
 
-
-                  <div class="col-12 mt-4 d-flex gap-2">
-
-                    <button type="submit" class="btn btn-agri">
-                      Send Request
+                  <div class="col-12 mt-4 d-flex flex-wrap gap-2">
+                    <button type="submit" class="btn btn-agri btn-lg-custom">
+                      <i class="bi bi-send me-2"></i>Send Request
                     </button>
-
-                    <button type="reset" class="btn btn-agri-outline">
-                      Clear Form
+                    <button type="reset" class="btn btn-lg-custom btn-outline-secondary">
+                      <i class="bi bi-arrow-clockwise me-2"></i>Clear Form
                     </button>
-
                   </div>
-
                 </div>
-
               </form>
-
-              <div id="formFeedbackAlert" class="d-none"></div>
-
+              <div id="formFeedbackAlert" class="d-none mt-3"></div>
             </div>
-
           </div>
+        </div>
+      </div>
+    </section>
 
-
-          <div class="col-lg-5">
-
-            <div class="sidebar-widget">
-
-              <h4 class="sidebar-widget-title text-agri-primary">
-                <i class="bi bi-headset me-2 text-agri-secondary"></i>
-                Agricultural Support Center
-              </h4>
-
-              <p class="text-muted">
-                Our agricultural support team provides practical
-                information and guidance for crop production,
-                pest management, soil health, and sustainable
-                farming practices.
-              </p>
-
-              <hr>
-
-              <div class="d-flex mb-3">
-
-                <i class="bi bi-envelope-check-fill fs-4 text-agri-secondary me-3"></i>
-
-                <div>
-                  <h6 class="mb-0 fw-bold">
-                    Email Assistance
-                  </h6>
-
-                  <p class="text-muted mb-0 small">
-                    support@agrokrishi.org
-                  </p>
-                </div>
-
-              </div>
-
-
-              <div class="d-flex mb-3">
-
-                <i class="bi bi-telephone-outbound-fill fs-4 text-agri-secondary me-3"></i>
-
-                <div>
-                  <h6 class="mb-0 fw-bold">
-                    Farmer Support Line
-                  </h6>
-
-                  <p class="text-muted mb-0 small">
-                    +1 (800) 555-AGRI
-                  </p>
-                </div>
-
-              </div>
-
-
-              <div class="d-flex mb-3">
-
-                <i class="bi bi-building-fill fs-4 text-agri-secondary me-3"></i>
-
-                <div>
-                  <h6 class="mb-0 fw-bold">
-                    Agricultural Support Office
-                  </h6>
-
-                  <p class="text-muted mb-0 small">
-                    Agricultural Research & Extension Center
-                  </p>
-                </div>
-
-              </div>
-
-
-              <div class="d-flex">
-
-                <i class="bi bi-clock-fill fs-4 text-agri-secondary me-3"></i>
-
-                <div>
-                  <h6 class="mb-0 fw-bold">
-                    Support Hours
-                  </h6>
-
-                  <p class="text-muted mb-0 small">
-                    Monday – Friday, 8:00 AM – 5:00 PM
-                  </p>
-                </div>
-
-              </div>
-
-            </div>
-
-
-            <div class="card agri-card border-0 rounded-4 overflow-hidden">
-
-              <div class="bg-agri-accent p-4 text-center">
-
-                <i class="bi bi-geo-alt-fill fs-1 text-agri-secondary"></i>
-
-                <h5 class="mt-2 text-agri-primary">
-                  Agricultural Support Location
-                </h5>
-
-                <p class="text-muted small mb-0">
-                  Research, Extension & Farmer Support Center
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
+    <section class="py-5">
+      <div class="container">
+        <div class="section-header mb-5">
+          <span class="sub-title">Why Contact Us</span>
+          <h2 class="main-title">Expert guidance for better farming decisions</h2>
+          <div class="divider"></div>
         </div>
 
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card agri-card h-100">
+              <div class="agri-card-body">
+                <h3 class="agri-card-title">
+                  <i class="bi bi-person-check-fill me-2"></i>
+                  Expert Advice
+                </h3>
+                <p class="agri-card-text">Access knowledge from agricultural specialists with years of field experience and research background in crop production and pest management.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card agri-card h-100">
+              <div class="agri-card-body">
+                <h3 class="agri-card-title">
+                  <i class="bi bi-lightning-fill me-2"></i>
+                  Quick Response
+                </h3>
+                <p class="agri-card-text">Get timely responses to your farming challenges. Our support team prioritizes urgent crop health issues and seasonal farming concerns.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card agri-card h-100">
+              <div class="agri-card-body">
+                <h3 class="agri-card-title">
+                  <i class="bi bi-hand-thumbs-up-fill me-2"></i>
+                  Practical Solutions
+                </h3>
+                <p class="agri-card-text">Receive actionable, field-tested recommendations that you can implement immediately to improve crop health and farm productivity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+
 
   <footer class="agri-footer">
 
